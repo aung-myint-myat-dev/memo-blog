@@ -56,9 +56,6 @@ function BlogCard({ className, blog }) {
                 <Link href={`/blog/edit/${blog.slug}`} className="flex items-center gap-2 px-3 py-2 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700/50 transition-colors">
                   <EditIcon className="size-4" style={{ color: brandColor }} /> Edit
                 </Link>
-                {/* <Link preserveScroll href={`/${blog.slug}`} method='delete' as="button" onBefore={() => confirm('Are you sure want to delete?')} className="w-full flex items-center gap-2 px-3 py-2 text-xs font-bold text-red-500 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors">
-                <DeleteIcon className="size-4" /> Delete
-              </Link> */}
                 <button
                   onClick={() => setDeleteBlogConfirmModal(true)}
                   className="w-full flex items-center gap-2 px-3 py-2 text-xs font-bold text-red-500 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors">

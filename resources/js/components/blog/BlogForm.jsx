@@ -93,8 +93,7 @@ function BlogForm({ categories, blog }) {
                   name='category_id'
                   onChange={(e) => setData('category_id', e.target.value)}
                   className="focus:outline-none rounded-md">
-                  <option value={1} className='dark:bg-zinc-950 py-2 px-3'>Technology</option>
-                  {categories.slice(1).map(category => (
+                  {categories.map(category => (
                     <option
                       key={category.id}
                       value={category.id}
